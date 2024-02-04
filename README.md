@@ -8,7 +8,7 @@ Customer data are saved only during the program runtime. Customers are not saved
 
 The structure of the CIB code consists of several main parts:
 
-- **Functions:**
+- *Functions:*
 - ‘display_menu()’ - function to display the menu.
 ```
 # Function to display the menu
