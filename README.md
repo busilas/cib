@@ -1,4 +1,4 @@
-# Customer Identity Book (CIB)
+<h1 align = "center"> Customer Identity Book (CIB) </h1>
 
 This Python script implements a virtual Customer Identity Book (CIB) using a console-based menu that determines the action based on the user's choice. The system permits users to perform various operations, add and remove customers, search for customers, update customer details, see all customers' details, and sort customers according to their last names.
 
@@ -11,20 +11,6 @@ The structure of the CIB code consists of several main parts:
  ## • Functions: 
  
  -	‘display_menu()’ - function to display the menu.
-
-```bash
-# Function to display the menu
-def display_menu():
-    print("\nMain Menu\n")
-    print("1 ) Add Customers")
-    print("2 ) Remove Customers")
-    print("3 ) Search Customers")
-    print("4 ) Update Customer Details")
-    print("5 ) Show All Customers Details")
-    print("6 ) Sort Customers (Ascending)")
-    print("7 ) Sort Customers (Descending)")
-    print("0 ) Quit")
-
 
 
 ![image](https://github.com/busilas/cib/assets/24510366/b991d6b9-1fd1-4564-9df4-58afb8b8ff3c)
