@@ -102,10 +102,28 @@ def validate_id_number(id_number):
     of 6
     return id_number.isdigit() and len(id_number) == 6
 ```
--	 
+
  <br>
-
-
+ 
+**Customer Object:**
+- Customer Object Definition: a dictionary named ‘Customer‘ is defined with properties such as Last_name, First_name, Birth_date, Address, Id_number, E_mail, and Phone_number.
+```
+# Define the Customer object with properties
+Customer = {
+    "Last_name": None,
+    "First_name": None,
+    "Birth_date": None,
+    "Address": None,
+    "Id_number": None,
+    "E_mail": None,
+    "Phone_number": None
+}
+```
+- Initialization: an empty list named ‘customers‘ is created to store customer objects.
+```
+# Initialize an empty list to store customer objects
+customers = []
+```
 
 
 
