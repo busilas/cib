@@ -451,19 +451,6 @@ This code validates the accuracy of the data entered by the user. These validati
 The described code illustrates a customer management system with an interface based on menu selection. It allows users to perform various operations, such as adding customers, removing customers, searching for customers, updating customer details, showing all customer details, and sorting customers according to their last name in ascending and descending order. Input validation functions that verify whether the information provided by the user, such as email addresses, phone numbers, birth dates, and ID numbers, meets certain criteria are implemented in the system.
 
     
-## Features
+ <br>
 
-- Add new customers to the virtual CIB.
-- Remove existing customers from the virtual CIB.
-- Search for customers based on different criteria.
-- Update customer details such as name, contact information, etc.
-- View all customers' details in the virtual CIB.
-- Sort customers according to their last names.
-
-## Usage
-
-1. Clone the repository:
-   
-   ```bash
-   git clone https://github.com/your-username/customer-identity-book.git
-
+[^]: Lopez, E. (2022) Bubble sort - how it works, Psuedocode and C++ & Python implementation, Medium. Available at: https://medium.com/codex/bubble-sort-how-it-works-psuedocode-and-c-python-implementation-c45306d44827 [Accessed: 27 January 2024]. 
