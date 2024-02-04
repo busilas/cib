@@ -111,6 +111,7 @@ The structure of the CIB code consists of several main parts:
  
 **Customer Object:**
 - **Customer Object Definition:** a dictionary named ‘Customer‘ is defined with properties such as Last_name, First_name, Birth_date, Address, Id_number, E_mail, and Phone_number.
+  
     ```
     # Define the Customer object with properties
     Customer = {
@@ -124,6 +125,7 @@ The structure of the CIB code consists of several main parts:
     }
     ```
 - **Initialization:** an empty list named ‘customers‘ is created to store customer objects.
+  
     ```
     # Initialize an empty list to store customer objects
     customers = []
@@ -131,7 +133,8 @@ The structure of the CIB code consists of several main parts:
  <br>
  
 **Data Collection:**
-- Data Collection: a loop is used to gather customer information from user input. It iterates a number of times specified by the variable ‘num’, according to the assignment’s requirements. 
+- **Data Collection:** a loop is used to gather customer information from user input. It iterates a number of times specified by the variable ‘num’, according to the assignment’s requirements.
+  
     ```
         # Prompt user for customer information
         customer["Last_name"] = input("Last Name: ")
@@ -144,7 +147,8 @@ The structure of the CIB code consists of several main parts:
         # Append the customer object to the list
         customers.append(customer)
     ```
-- Display Collected Data: after data collection, the program displays a header for the collected data and then prints each customer's details in tabular format using a loop. 
+- **Display Collected Data:** after data collection, the program displays a header for the collected data and then prints each customer's details in tabular format using a loop.
+  
     ```
     # Show collected customers details
     # Display header for the collected data
@@ -158,7 +162,7 @@ The structure of the CIB code consists of several main parts:
             customer["Phone_number"]
         ))
     ```
-- Main Loop: the main loop for the code execution, where the user interacts with the menu and performs operations (details are provided in the section – Application Features).
+- **Main Loop:** the main loop for the code execution, where the user interacts with the menu and performs operations (details are provided in the section – Application Features).
 
 <br>
 <br>
@@ -167,13 +171,13 @@ The structure of the CIB code consists of several main parts:
 
 The function begins with a while True loop that prompts a user’s choice of action based on selection statements. After every iteration, the user is presented with a menu to select an option. Depending on the user's choice, a program performs various operations.
 
-        ```
-            while True:  
-            # Display the menu
-            display_menu()
-            # Prompt user for menu choice
-            choice = input("\nEnter your choice (0-7): ")
-        ```
+    ```
+    while True:  
+    # Display the menu
+    display_menu()
+    # Prompt user for menu choice
+    choice = input("\nEnter your choice (0-7): ")
+    ```
 
 The main features of the script responsible for overall functioning are as follows:
 - **Add New Customers:** the function asks the user to enter the customer’s details (as shown below). After hitting enter, the contact is saved and the confirmation prompt prints.
