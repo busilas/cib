@@ -453,4 +453,4 @@ The described code illustrates a customer management system with an interface ba
     
  <br>
 
-[^]: Lopez, E. (2022) Bubble sort - how it works, Psuedocode and C++ & Python implementation, Medium. Available at: https://medium.com/codex/bubble-sort-how-it-works-psuedocode-and-c-python-implementation-c45306d44827 [Accessed: 27 January 2024]. 
+[^1]: Lopez, E. (2022) Bubble sort - how it works, Psuedocode and C++ & Python implementation, Medium. Available at: https://medium.com/codex/bubble-sort-how-it-works-psuedocode-and-c-python-implementation-c45306d44827 [Accessed: 27 January 2024]. 
