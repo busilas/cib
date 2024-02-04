@@ -12,7 +12,7 @@ The structure of the CIB code consists of several main parts:
  
  -	‘display_menu()’ - function to display the menu.
 
-   ```bash
+```bash
 # Function to display the menu
 def display_menu():
     print("\nMain Menu\n")
@@ -24,7 +24,7 @@ def display_menu():
     print("6 ) Sort Customers (Ascending)")
     print("7 ) Sort Customers (Descending)")
     print("0 ) Quit")
-
+```bash
    
 ![image](https://github.com/busilas/cib/assets/24510366/b991d6b9-1fd1-4564-9df4-58afb8b8ff3c)
 
