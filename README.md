@@ -29,7 +29,7 @@ The structure of the CIB code consists of several main parts:
     def is_customers_empty():
         return not customers
     ```
-- **‘sort_ascending()’** and **‘sort_descending()’** - implement the bubble sort algorithm to sort a list of customers based on their **‘Last_name’** attribute in ascending and descending order, respectively. In the first stage, it was planned one sorting function, however, changes applied to provide ascending and descending order sorting in the second stage. Although it is not the most efficient sorting algorithm for large datasets, however, it is understandable and easy to implement [^(Lopez, 2022)].
+- **‘sort_ascending()’** and **‘sort_descending()’** - implement the bubble sort algorithm to sort a list of customers based on their **‘Last_name’** attribute in ascending and descending order, respectively. In the first stage, it was planned one sorting function, however, changes applied to provide ascending and descending order sorting in the second stage. Although it is not the most efficient sorting algorithm for large datasets, however, it is understandable and easy to implement (Lopez, 2022).
     ```
     # Function to sort customers in ascending order based on Last_name
     def sort_ascending(customers):
@@ -470,7 +470,9 @@ This code validates the accuracy of the data entered by the user. These validati
 ## Conclusion
 The described code illustrates a customer management system with an interface based on menu selection. It allows users to perform various operations, such as adding customers, removing customers, searching for customers, updating customer details, showing all customer details, and sorting customers according to their last name in ascending and descending order. Input validation functions that verify whether the information provided by the user, such as email addresses, phone numbers, birth dates, and ID numbers, meets certain criteria are implemented in the system.
 
-    
- <br>
 
-[^(Lopez, 2022)]: Lopez, E. (2022) Bubble sort - how it works, Psuedocode and C++ & Python implementation, Medium. Available at: https://medium.com/codex/bubble-sort-how-it-works-psuedocode-and-c-python-implementation-c45306d44827 [Accessed: 27 January 2024]. 
+<br>
+
+### Reference list
+
+Lopez, E. (2022) Bubble sort - how it works, Psuedocode and C++ & Python implementation, Medium. Available at: https://medium.com/codex/bubble-sort-how-it-works-psuedocode-and-c-python-implementation-c45306d44827 [Accessed: 27 January 2024]. 
