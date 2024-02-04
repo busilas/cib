@@ -65,6 +65,7 @@ The structure of the CIB code consists of several main parts:
                     customers[j]
     ```
 -	‘validate_email()’ - function to validate an email input.
+  
     ```
     # Function to validate email
     def validate_email(email):
@@ -82,29 +83,29 @@ The structure of the CIB code consists of several main parts:
     ```
 -	 ‘validate_phone_number()’ - function to validate a phone number input.
   
-    ```
-    # Function to validate phone number
-    def validate_phone_number(phone_number):
-        #Check if the phone number is composed only of digits and has a length of 9
-        return phone_number.isdigit() and len(phone_number) == 9
-    ```
+        ```
+        # Function to validate phone number
+        def validate_phone_number(phone_number):
+            #Check if the phone number is composed only of digits and has a length of 9
+            return phone_number.isdigit() and len(phone_number) == 9
+        ```
 -	 ‘validate_birth_date()’ - function to validate a birth date input.
   
-    ```
-    # Function to validate birth date
-    def validate_birth_date(birth_date):
-        #Check if the birth date is composed only of digits and has a length of 8
-        return birth_date.isdigit() and len(birth_date) == 8
-    ```
+        ```
+        # Function to validate birth date
+        def validate_birth_date(birth_date):
+            #Check if the birth date is composed only of digits and has a length of 8
+            return birth_date.isdigit() and len(birth_date) == 8
+        ```
 -	 ‘validate_id_number ()’ - function to validate an ID number input.
   
-    ```
-    # Function to validate ID number
-    def validate_id_number(id_number):
-        #Check if the ID number is composed only of digits and has a length 
-        of 6
-        return id_number.isdigit() and len(id_number) == 6
-    ```
+        ```
+        # Function to validate ID number
+        def validate_id_number(id_number):
+            #Check if the ID number is composed only of digits and has a length 
+            of 6
+            return id_number.isdigit() and len(id_number) == 6
+        ```
 
  <br>
  
@@ -165,6 +166,7 @@ The structure of the CIB code consists of several main parts:
 ## Application Features
 
 The function begins with a while True loop that prompts a user’s choice of action based on selection statements. After every iteration, the user is presented with a menu to select an option. Depending on the user's choice, a program performs various operations.
+   
     ```
     while True:  
        # Display the menu
