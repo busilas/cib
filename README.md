@@ -166,6 +166,7 @@ The structure of the CIB code consists of several main parts:
 ## Application Features
 
 The function begins with a while True loop that prompts a user’s choice of action based on selection statements. After every iteration, the user is presented with a menu to select an option. Depending on the user's choice, a program performs various operations.
+
     ```
         while True:  
         # Display the menu
@@ -173,6 +174,7 @@ The function begins with a while True loop that prompts a user’s choice of act
         # Prompt user for menu choice
         choice = input("\nEnter your choice (0-7): ")
     ```
+
 The main features of the script responsible for overall functioning are as follows:
 - **Add New Customers:** the function asks the user to enter the customer’s details (as shown below). After hitting enter, the contact is saved and the confirmation prompt prints.
     ```
