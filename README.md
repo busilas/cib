@@ -23,31 +23,51 @@ def display_menu():
     print("7 ) Sort Customers (Descending)")
     print("0 ) Quit")
 ```
-- 
- 
-  Pull Requests regarding features that were previously non-existent; or that could be made better
-- **Raising Issues:**
- 
-  Found an Issue troubling you? Feel free to raise an issue regarding that and I, and the other contributers would definitely look into it.
-- **Contributions for the README.md file!**
- 
-  Can you help us making the README.md file look better, more beautiful, and functional? Go on! We'd be there for you with full coordination.
+- ‘is_customers_empty()’ - checks if the list of customers is empty, and returns True if the list is empty, False otherwise. This function developed in the second stage.
+```
+# Function to check if customers list is empty
+def is_customers_empty():
+    return not customers
+```
+- ‘sort_ascending()’ and ‘sort_descending()’ - implement the bubble sort algorithm to sort a list of customers based on their ‘Last_name’ attribute in ascending and descending order, respectively. In the first stage, it was planned one sorting function, however, changes applied to provide ascending and descending order sorting in the second stage. Although it is not the most efficient sorting algorithm for large datasets, however, it is understandable and easy to implement (Lopez, 2022).
+```
+# Function to sort customers in ascending order based on Last_name
+def sort_ascending(customers):
+    # Get the number of customers in the list
+    n = len(customers)
+    # Outer loop: Iterate through all elements in the list
+    for i in range(n - 1):
+        # Inner loop: Iterate through the unsorted part of the list
+        for j in range(0, n - i - 1):
+            # Compare Last_Name for adjacent customers and swap if 
+            necessary
+            if customers[j]["Last_name"] > customers[j + 
+            1]["Last_name"]:
+                # Swap the positions of the customers
+                customers[j], customers[j + 1] = customers[j + 1], 
+                customers[j]
+```
+```
+# Function to sort customers in descending order based on Last_name
+def sort_descending(customers):
+    # Get the number of customers in the list
+    n = len(customers)
+    # Outer loop: Iterate through all elements in the list
+    for i in range(n - 1):
+        # Inner loop: Iterate through the unsorted part of the list
+        for j in range(0, n - i - 1):
+            # Compare Last_Name for adjacent customers and swap if 
+            necessary
+            if customers[j]["Last_name"] < customers[j + 
+            1]["Last_name"]:
+                # Swap the positions of the customers
+                customers[j], customers[j + 1] = customers[j + 1], 
+                customers[j]
+```
  
  <br>
 
 
-
-
-
- ## • Functions: 
- 
- -	‘display_menu()’ - function to display the menu.
-
-![image](https://github.com/busilas/cib/assets/24510366/b991d6b9-1fd1-4564-9df4-58afb8b8ff3c)
-
--	‘is_customers_empty()’ - checks if the list of customers is empty, and returns True if the list is empty, False otherwise. This function developed in the second stage.
-  
-![image](https://github.com/busilas/cib/assets/24510366/db560ffd-dac9-4956-a6c1-f89796483f2d)
 
 -	‘sort_ascending()’ and ‘sort_descending()’ - implement the bubble sort algorithm to sort a list of customers based on their ‘Last_name’ attribute in ascending and descending order, respectively. In the first stage, it was planned one sorting function, however, changes applied to provide ascending and descending order sorting in the second stage. Although it is not the most efficient sorting algorithm for large datasets, however, it is understandable and easy to implement (Lopez, 2022).
   
