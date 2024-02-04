@@ -24,8 +24,9 @@ def display_menu():
     print("6 ) Sort Customers (Ascending)")
     print("7 ) Sort Customers (Descending)")
     print("0 ) Quit")
-```bash
-   
+
+
+
 ![image](https://github.com/busilas/cib/assets/24510366/b991d6b9-1fd1-4564-9df4-58afb8b8ff3c)
 
 -	‘is_customers_empty()’ - checks if the list of customers is empty, and returns True if the list is empty, False otherwise. This function developed in the second stage.
