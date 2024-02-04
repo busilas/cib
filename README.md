@@ -29,7 +29,7 @@ The structure of the CIB code consists of several main parts:
     def is_customers_empty():
         return not customers
     ```
-- **‘sort_ascending()’** and **‘sort_descending()’** - implement the bubble sort algorithm to sort a list of customers based on their **‘Last_name’** attribute in ascending and descending order, respectively. In the first stage, it was planned one sorting function, however, changes applied to provide ascending and descending order sorting in the second stage. Although it is not the most efficient sorting algorithm for large datasets, however, it is understandable and easy to implement (Lopez, 2022).
+- **‘sort_ascending()’** and **‘sort_descending()’** - implement the bubble sort algorithm to sort a list of customers based on their **‘Last_name’** attribute in ascending and descending order, respectively. In the first stage, it was planned one sorting function, however, changes applied to provide ascending and descending order sorting in the second stage. Although it is not the most efficient sorting algorithm for large datasets, however, it is understandable and easy to implement [^(Lopez, 2022)].
     ```
     # Function to sort customers in ascending order based on Last_name
     def sort_ascending(customers):
@@ -232,7 +232,7 @@ The main features of the script responsible for overall functioning are as follo
                 print("No customers found with Last Name 
                 '{}'.".format(remove_last_name))
     ```
--	**Search Customers:** user can search customers based on their Last_name from the customer list by iterating through each customer in the list to see if the input is a part of the customer’s last name. If a match is found, it displays the details relevant to the customer such as the full name and ID number. Otherwise, it notifies the user that the name is not found.
+-	**Search Customers:** user can search customers based on their **Last_name** from the customer list by iterating through each customer in the list to see if the input is a part of the customer’s last name. If a match is found, it displays the details relevant to the customer such as the full name and ID number. Otherwise, it notifies the user that the name is not found.
     ```
         # User input to search customer by the Last Name
         elif choice == '3':
@@ -366,42 +366,42 @@ The main features of the script responsible for overall functioning are as follo
                 ))
     ```
     Descending sorting option:
-```
-    # User input to sort customers (descending)
-    elif choice == '7':
-                # Calls function to check if customers list is empty
-        if is_customers_empty():
-            print("No customers to show. Please add a new customer and try 
-            again.")
-        else:
-            # Sort customers details based on Last_Name (descending)
-            sort_descending(customers)
-            # Print success message after sorting
-            print("\nCustomers sorted successfully based on Last_Name 
-            (descending).")
-            # Print header for the sorted customer details
-            print("\nID\t\tName\t\t\tBirth date\t\t\tAddress\t\t\tID 
-            Number\t\t\tE-mail\t\t\tPhone Number\n")
-            # Iterate through sorted customers and print their details
-            for idx, customer in enumerate(customers, 1):
-                print("{}\t\t{} 
-                {}\t\t\t{}\t\t\t{}\t\t\t{}\t\t\t{}\t\t\t{}".format(
-                    idx, customer["Last_name"], customer["First_name"], 
-                    customer["Birth_date"], customer["Address"], 
-                    customer["Id_number"], customer["E_mail"],  
-                    customer["Phone_number"]
-            ))
-```
+    ```
+        # User input to sort customers (descending)
+        elif choice == '7':
+                    # Calls function to check if customers list is empty
+            if is_customers_empty():
+                print("No customers to show. Please add a new customer and try 
+                again.")
+            else:
+                # Sort customers details based on Last_Name (descending)
+                sort_descending(customers)
+                # Print success message after sorting
+                print("\nCustomers sorted successfully based on Last_Name 
+                (descending).")
+                # Print header for the sorted customer details
+                print("\nID\t\tName\t\t\tBirth date\t\t\tAddress\t\t\tID 
+                Number\t\t\tE-mail\t\t\tPhone Number\n")
+                # Iterate through sorted customers and print their details
+                for idx, customer in enumerate(customers, 1):
+                    print("{}\t\t{} 
+                    {}\t\t\t{}\t\t\t{}\t\t\t{}\t\t\t{}\t\t\t{}".format(
+                        idx, customer["Last_name"], customer["First_name"], 
+                        customer["Birth_date"], customer["Address"], 
+                        customer["Id_number"], customer["E_mail"],  
+                        customer["Phone_number"]
+                ))
+    ```
  	
 -	**Quit:** The software ends the program's execution by breaking out of the loop and printing a message to the user informing them that the programme has ended.
-    ```
-        # User input to exit the program
-        elif choice == '0':
-            # Quit message
-            print("Program Exited\n")
-            # Exit the loop to end the program
-            Break
-    ```
+        ```
+            # User input to exit the program
+            elif choice == '0':
+                # Quit message
+                print("Program Exited\n")
+                # Exit the loop to end the program
+                Break
+        ```
 <br>
 <be>
 
@@ -453,4 +453,4 @@ The described code illustrates a customer management system with an interface ba
     
  <br>
 
-[^1]: Lopez, E. (2022) Bubble sort - how it works, Psuedocode and C++ & Python implementation, Medium. Available at: https://medium.com/codex/bubble-sort-how-it-works-psuedocode-and-c-python-implementation-c45306d44827 [Accessed: 27 January 2024]. 
+[^(Lopez, 2022)]: Lopez, E. (2022) Bubble sort - how it works, Psuedocode and C++ & Python implementation, Medium. Available at: https://medium.com/codex/bubble-sort-how-it-works-psuedocode-and-c-python-implementation-c45306d44827 [Accessed: 27 January 2024]. 
