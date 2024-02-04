@@ -4,14 +4,44 @@ This Python script implements a virtual Customer Identity Book (CIB) using a con
 
 Customer data are saved only during the program runtime. Customers are not saved externally once the termination has been completed.
 
-# Code Structure
+## Code Structure
 
 The structure of the CIB code consists of several main parts:
+
+- **Functions:**
+- ‘display_menu()’ - function to display the menu.
+```
+# Function to display the menu
+def display_menu():
+    print("\nMain Menu\n")
+    print("1 ) Add Customers")
+    print("2 ) Remove Customers")
+    print("3 ) Search Customers")
+    print("4 ) Update Customer Details")
+    print("5 ) Show All Customers Details")
+    print("6 ) Sort Customers (Ascending)")
+    print("7 ) Sort Customers (Descending)")
+    print("0 ) Quit")
+```
+- 
+ 
+  Pull Requests regarding features that were previously non-existent; or that could be made better
+- **Raising Issues:**
+ 
+  Found an Issue troubling you? Feel free to raise an issue regarding that and I, and the other contributers would definitely look into it.
+- **Contributions for the README.md file!**
+ 
+  Can you help us making the README.md file look better, more beautiful, and functional? Go on! We'd be there for you with full coordination.
+ 
+ <br>
+
+
+
+
 
  ## • Functions: 
  
  -	‘display_menu()’ - function to display the menu.
-
 
 ![image](https://github.com/busilas/cib/assets/24510366/b991d6b9-1fd1-4564-9df4-58afb8b8ff3c)
 
