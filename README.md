@@ -166,10 +166,9 @@ The structure of the CIB code consists of several main parts:
 ## Application Features
 
 The function begins with a while True loop that prompts a user’s choice of action based on selection statements. After every iteration, the user is presented with a menu to select an option. Depending on the user's choice, a program performs various operations.
-   
     ```
-    while True:  
-       # Display the menu
+        while True:  
+        # Display the menu
         display_menu()
         # Prompt user for menu choice
         choice = input("\nEnter your choice (0-7): ")
