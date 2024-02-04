@@ -8,13 +8,13 @@ Customer data are saved only during the program runtime. Customers are not saved
 
 The structure of the CIB code consists of several main parts:
 
- •	Functions: 
+ •	##Functions: 
  
- o	‘display_menu()’ - function to display the menu. 
+ -	‘display_menu()’ - function to display the menu. 
 
 ![image](https://github.com/busilas/cib/assets/24510366/b991d6b9-1fd1-4564-9df4-58afb8b8ff3c)
 
-o	‘is_customers_empty()’ - checks if the list of customers is empty, and returning True if the list is empty, False otherwise. This function developed on the second stage.
+-	‘is_customers_empty()’ - checks if the list of customers is empty, and returning True if the list is empty, False otherwise. This function developed on the second stage.
 
 ![image](https://github.com/busilas/cib/assets/24510366/db560ffd-dac9-4956-a6c1-f89796483f2d)
 
