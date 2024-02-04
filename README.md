@@ -407,6 +407,7 @@ The main features of the script responsible for overall functioning are as follo
 
 ## Validation
 This code validates the accuracy of the data entered by the user. These validations were implemented while collecting and updating customer information to ensure the accuracy of the stored data. If none of the validation conditions are met, users are prompted to re-enter the information. Implementation examples of email, phone number, birth date, and ID number validations are provided in the main loop:
+
     ```
         # Create a new customer object
         customer = Customer.copy()
