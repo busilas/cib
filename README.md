@@ -171,6 +171,29 @@ while True:
 ```
 The main features of the script responsible for overall functioning are as follows:
 - Add New Customers:  the function asks the user to enter the customer’s details (as shown below). After hitting enter, the contact is saved and the confirmation prompt prints.
+    ```
+    # User input to add customer
+    if choice == '1':
+        # Add Customers
+        # Create a copy of the Customer template to store user input
+        customer = Customer.copy()
+        # Prompt the user to enter the following details
+        print("\nPlease enter the following details: ")
+        # Collect user input for customer details
+        customer["Last_name"] = input("Last Name: ")
+        customer["First_name"] = input("First Name: ")
+        customer["Birth_date"] = int(input("Birth Date: "))
+        customer["Address"] = input("Address: ")
+        customer["Id_number"] = int(input("ID Number: "))
+        customer["E_mail"] = input("E-mail: ")
+        customer["Phone_number"] = int(input("Phone Number: "))
+        # Append the customer details to the list of customers
+        customers.append(customer)
+        # Display a success message with a check mark symbol
+        print("\nCustomer details saved successfully \N{check mark}")
+
+    ```
+- 
 
 
 -	
