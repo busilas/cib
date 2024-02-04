@@ -64,32 +64,51 @@ def sort_descending(customers):
                 customers[j], customers[j + 1] = customers[j + 1], 
                 customers[j]
 ```
- 
+-	‘validate_email()’ - function to validate an email input.
+```
+# Function to validate email
+def validate_email(email):
+    # Check if the email has the correct structure
+    if '@' in email and '.' in email:
+        # Split the email into local part and domain part
+        local_part, domain_part = email.split('@')
+        # Check if the local and domain parts are not empty
+        if local_part and domain_part:
+            # Check if the domain part has at least one dot (.)
+            if '.' in domain_part:
+                return True
+    # If any condition fails, the email is considered invalid
+    return False
+```
+-	 ‘validate_phone_number()’ - function to validate a phone number input.
+```
+# Function to validate phone number
+def validate_phone_number(phone_number):
+    # Check if the phone number is composed only of digits and has a length of 9
+    return phone_number.isdigit() and len(phone_number) == 9
+```
+-	 ‘validate_birth_date()’ - function to validate a birth date input.
+```
+# Function to validate birth date
+def validate_birth_date(birth_date):
+    # Check if the birth date is composed only of digits and has a length of 8
+    return birth_date.isdigit() and len(birth_date) == 8
+```
+-	 ‘validate_id_number ()’ - function to validate an ID number input.
+```
+# Function to validate ID number
+def validate_id_number(id_number):
+    # Check if the ID number is composed only of digits and has a length 
+    of 6
+    return id_number.isdigit() and len(id_number) == 6
+```
+-	 
  <br>
 
 
 
--	‘sort_ascending()’ and ‘sort_descending()’ - implement the bubble sort algorithm to sort a list of customers based on their ‘Last_name’ attribute in ascending and descending order, respectively. In the first stage, it was planned one sorting function, however, changes applied to provide ascending and descending order sorting in the second stage. Although it is not the most efficient sorting algorithm for large datasets, however, it is understandable and easy to implement (Lopez, 2022).
-  
-![image](https://github.com/busilas/cib/assets/24510366/ee07e50e-d1f0-4fa8-a6b3-db8d0e7a387e)
-![image](https://github.com/busilas/cib/assets/24510366/26a9d633-a383-4366-b1f1-d907b50d6bc6)
 
--	‘validate_email()’ - function to validate an email input.
-  
-![image](https://github.com/busilas/cib/assets/24510366/1af0cce0-6a1b-4501-add4-ada080b1851c)
-![image](https://github.com/busilas/cib/assets/24510366/bf9fa36a-015e-4fc2-8960-0eb71cff82f4)
 
--	‘validate_phone_number()’ - function to validate a phone number input.
-  
-![image](https://github.com/busilas/cib/assets/24510366/a8b08ae4-22fd-46a7-bba8-7481df116e75)
-
--	‘validate_birth_date()’ - function to validate a birth date input.
-  
-![image](https://github.com/busilas/cib/assets/24510366/e913bfbb-d043-4832-9631-4a7ee73e6cec)
-
--	‘validate_id_number ()’ - function to validate an ID number input.
-  
-![image](https://github.com/busilas/cib/assets/24510366/7ae3f1d8-fc86-4167-8ef7-c7318efedbf0)
 
 ## • Customer Object:
 
