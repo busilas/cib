@@ -124,19 +124,44 @@ Customer = {
 # Initialize an empty list to store customer objects
 customers = []
 ```
+ <br>
+ 
+**Data Collection:**
+- Data Collection: a loop is used to gather customer information from user input. It iterates a number of times specified by the variable ‘num’, according to the assignment’s requirements. 
+```
+    # Prompt user for customer information
+    customer["Last_name"] = input("Last Name: ")
+    customer["First_name"] = input("First Name: ")
+    customer["Birth_date"] = int(input("Birth Date: "))
+    customer["Address"] = input("Address: ")
+    customer["Id_number"] = int(input("ID Number: "))
+    customer["E_mail"] = input("E-mail: ")
+    customer["Phone_number"] = int(input("Phone Number: "))
+    # Append the customer object to the list
+    customers.append(customer)
+```
+- Display Collected Data: after data collection, the program displays a header for the collected data and then prints each customer's details in tabular format using a loop. 
+```
+# Show collected customers details
+# Display header for the collected data
+print("\nID\t\tName\t\t\tBirth date\t\t\tAddress\t\t\tID Number\t\t\tE-mail\t\t\tPhone Number\n")
+# Loop to print customer details
+for idx, customer in enumerate(customers, 1):
+    print("{}\t\t{} {}\t\t\t{}\t\t\t{}\t\t\t{}\t\t\t{}\t\t\t{}".format(
+        idx, customer["Last_name"], customer["First_name"], 
+        customer["Birth_date"], customer["Address"], 
+        customer["Id_number"], customer["E_mail"], 
+        customer["Phone_number"]
+    ))
+```
+- Main Loop: the main loop for the code execution, where the user interacts with the menu and performs operations (details are provided in the section – Application Features).
 
+ <br>
+<br>
 
+## Application Features
 
-
-## • Customer Object:
-
--	Customer Object Definition: a dictionary named ‘Customer‘ is defined with properties such as Last_name, First_name, Birth_date, Address, Id_number, E_mail, and Phone_number.
-  
-![image](https://github.com/busilas/cib/assets/24510366/c33d558c-51e5-4ce2-8d57-6333e98684d0)
-
--	Initialization: an empty list named ‘customers‘ is created to store customer objects.
-  
-![image](https://github.com/busilas/cib/assets/24510366/e6b9f67b-4ee8-4bc6-a744-84618b7ba181)
+The function begins with a while True loop that prompts a user’s choice of action based on selection statements. After every iteration, the user is presented with a menu to select an option. Depending on the user's choice, a program performs various operations.
 
 ## • Data Collection:
 
