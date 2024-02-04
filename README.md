@@ -171,16 +171,18 @@ The structure of the CIB code consists of several main parts:
 
 The function begins with a while True loop that prompts a user’s choice of action based on selection statements. After every iteration, the user is presented with a menu to select an option. Depending on the user's choice, a program performs various operations.
 
-    ```
-    while True:  
-    # Display the menu
-    display_menu()
-    # Prompt user for menu choice
-    choice = input("\nEnter your choice (0-7): ")
-    ```
+        ```
+        while True:  
+        # Display the menu
+        display_menu()
+        # Prompt user for menu choice
+        choice = input("\nEnter your choice (0-7): ")
+        ```
 
 The main features of the script responsible for overall functioning are as follows:
+
 - **Add New Customers:** the function asks the user to enter the customer’s details (as shown below). After hitting enter, the contact is saved and the confirmation prompt prints.
+  
     ```
     # User input to add customer
     if choice == '1':
@@ -202,8 +204,11 @@ The main features of the script responsible for overall functioning are as follo
         # Display a success message with a check mark symbol
         print("\nCustomer details saved successfully \N{check mark}")
     ```
+    
 > All the features below apply the function that first checks whether the customers is empty or not, if True, the user is asked to add a new contact and try again.
+
 - **Remove Customers:** user can remove customers based on their Last_name from the customer list, it deletes the key:value pair of that particular customer from customers.
+  
     ```
         elif choice == '2':
             # Calls function to check if customers list is empty
@@ -236,7 +241,9 @@ The main features of the script responsible for overall functioning are as follo
                 print("No customers found with Last Name 
                 '{}'.".format(remove_last_name))
     ```
+    
 -	**Search Customers:** user can search customers based on their **Last_name** from the customer list by iterating through each customer in the list to see if the input is a part of the customer’s last name. If a match is found, it displays the details relevant to the customer such as the full name and ID number. Otherwise, it notifies the user that the name is not found.
+  
     ```
         # User input to search customer by the Last Name
         elif choice == '3':
@@ -269,7 +276,9 @@ The main features of the script responsible for overall functioning are as follo
                 if not found:
                     print("Name not found")
     ```
+    
 -	**Update Customers Details:** user can update customers based on their **Last_name** from the customer list. The program prints customer details and asks to update information. Otherwise prints error message.
+  
     ```
         # User input to update customer details
         elif choice == '4':
@@ -320,7 +329,9 @@ The main features of the script responsible for overall functioning are as follo
                     print("\nNo customers found with Last Name 
                     '{}'.".format(update_last_name))
     ```
+    
 -	**Show All Customers:** user can view and display all saved customers.
+  
     ```
         # User input to show all customers details
         elif choice == '5':
@@ -342,7 +353,9 @@ The main features of the script responsible for overall functioning are as follo
                 customer["Phone_number"]
             ))
     ```
--	**Sort Customers:** user can sort a list of customers in ascending and descending order based on their Last_name, calling functions. Both sorting options provided as a two separate features (No. 6 and 7). 
+
+-	**Sort Customers:** user can sort a list of customers in ascending and descending order based on their Last_name, calling functions. Both sorting options provided as a two separate features (No. 6 and 7).
+  
     ```
         # User input to sort customers (ascending)
         elif choice == '6':
@@ -369,7 +382,9 @@ The main features of the script responsible for overall functioning are as follo
                         customer["Phone_number"]
                 ))
     ```
+    
     Descending sorting option:
+
     ```
         # User input to sort customers (descending)
         elif choice == '7':
@@ -398,6 +413,7 @@ The main features of the script responsible for overall functioning are as follo
     ```
  	
 -	**Quit:** The software ends the program's execution by breaking out of the loop and printing a message to the user informing them that the programme has ended.
+  
         ```
             # User input to exit the program
             elif choice == '0':
