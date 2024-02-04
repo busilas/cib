@@ -81,6 +81,7 @@ The structure of the CIB code consists of several main parts:
         return False
     ```
 -	 ‘validate_phone_number()’ - function to validate a phone number input.
+  
     ```
     # Function to validate phone number
     def validate_phone_number(phone_number):
@@ -88,6 +89,7 @@ The structure of the CIB code consists of several main parts:
         return phone_number.isdigit() and len(phone_number) == 9
     ```
 -	 ‘validate_birth_date()’ - function to validate a birth date input.
+  
     ```
     # Function to validate birth date
     def validate_birth_date(birth_date):
@@ -95,6 +97,7 @@ The structure of the CIB code consists of several main parts:
         return birth_date.isdigit() and len(birth_date) == 8
     ```
 -	 ‘validate_id_number ()’ - function to validate an ID number input.
+  
     ```
     # Function to validate ID number
     def validate_id_number(id_number):
